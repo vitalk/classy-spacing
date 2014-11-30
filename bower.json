@@ -1,0 +1,17 @@
+{
+  "name": "classy-spacing",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Applies a consistent spacing across a number of elements",
+  "main": "generic.spacing.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.2.2"
+  }
+}

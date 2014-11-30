@@ -1,0 +1,34 @@
+// Classy spacing; applies a consistent margins across a number of elements.
+
+
+// Utility mixin; uses to set margin bottom to default value (typically
+// the same as the base line-height) and allow us to keep a consistent
+// vertical rhythm.
+.classy-margin-bottom() {
+    margin-bottom: @classy-unit;
+}
+
+
+// Utility mixin; uses to set left margin to concerned value.
+.classy-margin-left() {
+    margin-left: (2 * @classy-unit);
+}
+
+
+// Apply a margin after the certain elements to keep a consistent
+// vertical rhythm, as per:
+// http://csswizardry.com/2012/06/single-direction-margin-declarations
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+p, blockquote, pre,
+form, fieldset,
+table,
+figure {
+    .classy-margin-bottom();
+}
+
+
+// Indent certain elements by a consistent amount.
+ul, ol, dl {
+    .classy-margin-left();
+}
